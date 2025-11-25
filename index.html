@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Maratona Disney Mágica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindos à Nossa Aventura Disney!</h1>
+            <p>Preparem a pipoca, o abraço e o sofá. Nossa jornada pelos clássicos começa agora!</p>
+            <div class="progress-summary">
+                <span id="completed-count">0</span> de <span id="total-count">60</span> filmes vistos!
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>🎬 A Checklist Mágica da Disney</h2>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="unwatched">A Ver</button>
+            <button class="filter-btn" data-filter="watched">Vistos</button>
+        </div>
+
+        <div class="movie-list">
+            <section class="movie-era" data-era="gold">
+                <h3>⭐ ERA DE OURO (1937–1942)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="1">
+                        <input type="checkbox" id="movie-1">
+                        <label for="movie-1">Branca de Neve e os Sete Anões (1937)</label>
+                    </div>
+                    <div class="movie-item" data-id="2">
+                        <input type="checkbox" id="movie-2">
+                        <label for="movie-2">Pinóquio (1940)</label>
+                    </div>
+                    <div class="movie-item" data-id="3">
+                        <input type="checkbox" id="movie-3">
+                        <label for="movie-3">Fantasia (1940)</label>
+                    </div>
+                    <div class="movie-item" data-id="4">
+                        <input type="checkbox" id="movie-4">
+                        <label for="movie-4">Dumbo (1941)</label>
+                    </div>
+                    <div class="movie-item" data-id="5">
+                        <input type="checkbox" id="movie-5">
+                        <label for="movie-5">Bambi (1942)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="war">
+                <h3>⭐ ERA DA GUERRA (1943–1949)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="6">
+                        <input type="checkbox" id="movie-6">
+                        <label for="movie-6">Saúde para Todos (Saludos Amigos) (1943)</label>
+                    </div>
+                    <div class="movie-item" data-id="7">
+                        <input type="checkbox" id="movie-7">
+                        <label for="movie-7">Você Já Foi à Bahia? (1945)</label>
+                    </div>
+                    <div class="movie-item" data-id="8">
+                        <input type="checkbox" id="movie-8">
+                        <label for="movie-8">Música, Maestro! (1946)</label>
+                    </div>
+                    <div class="movie-item" data-id="9">
+                        <input type="checkbox" id="movie-9">
+                        <label for="movie-9">Como É Bom se Divertir (1947)</label>
+                    </div>
+                    <div class="movie-item" data-id="10">
+                        <input type="checkbox" id="movie-10">
+                        <label for="movie-10">Tempo de Melodia (1948)</label>
+                    </div>
+                    <div class="movie-item" data-id="11">
+                        <input type="checkbox" id="movie-11">
+                        <label for="movie-11">As Aventuras de Ichabod e Sr. Sapo (1949)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="silver">
+                <h3>⭐ ERA DE PRATA (1950–1967)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="12">
+                        <input type="checkbox" id="movie-12">
+                        <label for="movie-12">Cinderela (1950)</label>
+                    </div>
+                    <div class="movie-item" data-id="13">
+                        <input type="checkbox" id="movie-13">
+                        <label for="movie-13">Alice no País das Maravilhas (1951)</label>
+                    </div>
+                    <div class="movie-item" data-id="14">
+                        <input type="checkbox" id="movie-14">
+                        <label for="movie-14">Peter Pan (1953)</label>
+                    </div>
+                    <div class="movie-item" data-id="15">
+                        <input type="checkbox" id="movie-15">
+                        <label for="movie-15">A Dama e o Vagabundo (1955)</label>
+                    </div>
+                    <div class="movie-item" data-id="16">
+                        <input type="checkbox" id="movie-16">
+                        <label for="movie-16">A Bela Adormecida (1959)</label>
+                    </div>
+                    <div class="movie-item" data-id="17">
+                        <input type="checkbox" id="movie-17">
+                        <label for="movie-17">101 Dálmatas (1961)</label>
+                    </div>
+                    <div class="movie-item" data-id="18">
+                        <input type="checkbox" id="movie-18">
+                        <label for="movie-18">Merlin – O Encantador (1963)</label>
+                    </div>
+                    <div class="movie-item" data-id="19">
+                        <input type="checkbox" id="movie-19">
+                        <label for="movie-19">Mogli – O Menino Lobo (1967)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="bronze">
+                <h3>⭐ ERA DO BRONZE (1970–1988)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="20">
+                        <input type="checkbox" id="movie-20">
+                        <label for="movie-20">Aristogatas (1970)</label>
+                    </div>
+                    <div class="movie-item" data-id="21">
+                        <input type="checkbox" id="movie-21">
+                        <label for="movie-21">Robin Hood (1973)</label>
+                    </div>
+                    <div class="movie-item" data-id="22">
+                        <input type="checkbox" id="movie-22">
+                        <label for="movie-22">As Aventuras de Bernardo e Bianca (1977)</label>
+                    </div>
+                    <div class="movie-item" data-id="23">
+                        <input type="checkbox" id="movie-23">
+                        <label for="movie-23">O Cão e a Raposa (1981)</label>
+                    </div>
+                    <div class="movie-item" data-id="24">
+                        <input type="checkbox" id="movie-24">
+                        <label for="movie-24">O Caldeirão Mágico (1985)</label>
+                    </div>
+                    <div class="movie-item" data-id="25">
+                        <input type="checkbox" id="movie-25">
+                        <label for="movie-25">As Peripécias do Ratinho Detetive (1986)</label>
+                    </div>
+                    <div class="movie-item" data-id="26">
+                        <input type="checkbox" id="movie-26">
+                        <label for="movie-26">Oliver e Sua Turma (1988)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="renaissance">
+                <h3>⭐ RENASCIMENTO DISNEY (1989–1999)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="27">
+                        <input type="checkbox" id="movie-27">
+                        <label for="movie-27">A Pequena Sereia (1989)</label>
+                    </div>
+                    <div class="movie-item" data-id="28">
+                        <input type="checkbox" id="movie-28">
+                        <label for="movie-28">Bernardo e Bianca na Terra dos Cangurus (1990)</label>
+                    </div>
+                    <div class="movie-item" data-id="29">
+                        <input type="checkbox" id="movie-29">
+                        <label for="movie-29">A Bela e a Fera (1991)</label>
+                    </div>
+                    <div class="movie-item" data-id="30">
+                        <input type="checkbox" id="movie-30">
+                        <label for="movie-30">Aladdin (1992)</label>
+                    </div>
+                    <div class="movie-item" data-id="31">
+                        <input type="checkbox" id="movie-31">
+                        <label for="movie-31">O Rei Leão (1994)</label>
+                    </div>
+                    <div class="movie-item" data-id="32">
+                        <input type="checkbox" id="movie-32">
+                        <label for="movie-32">Pocahontas (1995)</label>
+                    </div>
+                    <div class="movie-item" data-id="33">
+                        <input type="checkbox" id="movie-33">
+                        <label for="movie-33">O Corcunda de Notre Dame (1996)</label>
+                    </div>
+                    <div class="movie-item" data-id="34">
+                        <input type="checkbox" id="movie-34">
+                        <label for="movie-34">Hércules (1997)</label>
+                    </div>
+                    <div class="movie-item" data-id="35">
+                        <input type="checkbox" id="movie-35">
+                        <label for="movie-35">Mulan (1998)</label>
+                    </div>
+                    <div class="movie-item" data-id="36">
+                        <input type="checkbox" id="movie-36">
+                        <label for="movie-36">Tarzan (1999)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="post-renaissance">
+                <h3>⭐ PÓS-RENASCIMENTO (2000–2009)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="37">
+                        <input type="checkbox" id="movie-37">
+                        <label for="movie-37">Fantasia 2000 (2000)</label>
+                    </div>
+                    <div class="movie-item" data-id="38">
+                        <input type="checkbox" id="movie-38">
+                        <label for="movie-38">Dinossauro (2000)</label>
+                    </div>
+                    <div class="movie-item" data-id="39">
+                        <input type="checkbox" id="movie-39">
+                        <label for="movie-39">A Nova Onda do Imperador (2000)</label>
+                    </div>
+                    <div class="movie-item" data-id="40">
+                        <input type="checkbox" id="movie-40">
+                        <label for="movie-40">Atlantis – O Reino Perdido (2001)</label>
+                    </div>
+                    <div class="movie-item" data-id="41">
+                        <input type="checkbox" id="movie-41">
+                        <label for="movie-41">Lilo & Stitch (2002)</label>
+                    </div>
+                    <div class="movie-item" data-id="42">
+                        <input type="checkbox" id="movie-42">
+                        <label for="movie-42">Planeta do Tesouro (2002)</label>
+                    </div>
+                    <div class="movie-item" data-id="43">
+                        <input type="checkbox" id="movie-43">
+                        <label for="movie-43">Irmão Urso (2003)</label>
+                    </div>
+                    <div class="movie-item" data-id="44">
+                        <input type="checkbox" id="movie-44">
+                        <label for="movie-44">Nem que a Vaca Tussa (2004)</label>
+                    </div>
+                    <div class="movie-item" data-id="45">
+                        <input type="checkbox" id="movie-45">
+                        <label for="movie-45">O Galinho Chicken Little (2005)</label>
+                    </div>
+                    <div class="movie-item" data-id="46">
+                        <input type="checkbox" id="movie-46">
+                        <label for="movie-46">A Família do Futuro (2007)</label>
+                    </div>
+                    <div class="movie-item" data-id="47">
+                        <input type="checkbox" id="movie-47">
+                        <label for="movie-47">Bolt – Supercão (2008)</label>
+                    </div>
+                    <div class="movie-item" data-id="48">
+                        <input type="checkbox" id="movie-48">
+                        <label for="movie-48">A Princesa e o Sapo (2009)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="modern">
+                <h3>⭐ ERA MODERNA (2010–2020)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="49">
+                        <input type="checkbox" id="movie-49">
+                        <label for="movie-49">Enrolados (2010)</label>
+                    </div>
+                    <div class="movie-item" data-id="50">
+                        <input type="checkbox" id="movie-50">
+                        <label for="movie-50">Winnie the Pooh (2011)</label>
+                    </div>
+                    <div class="movie-item" data-id="51">
+                        <input type="checkbox" id="movie-51">
+                        <label for="movie-51">Detona Ralph (2012)</label>
+                    </div>
+                    <div class="movie-item" data-id="52">
+                        <input type="checkbox" id="movie-52">
+                        <label for="movie-52">Frozen – Uma Aventura Congelante (2013)</label>
+                    </div>
+                    <div class="movie-item" data-id="53">
+                        <input type="checkbox" id="movie-53">
+                        <label for="movie-53">Operação Big Hero (2014)</label>
+                    </div>
+                    <div class="movie-item" data-id="54">
+                        <input type="checkbox" id="movie-54">
+                        <label for="movie-54">Zootopia (2016)</label>
+                    </div>
+                    <div class="movie-item" data-id="55">
+                        <input type="checkbox" id="movie-55">
+                        <label for="movie-55">Moana (2016)</label>
+                    </div>
+                    <div class="movie-item" data-id="56">
+                        <input type="checkbox" id="movie-56">
+                        <label for="movie-56">WiFi Ralph (2018)</label>
+                    </div>
+                    <div class="movie-item" data-id="57">
+                        <input type="checkbox" id="movie-57">
+                        <label for="movie-57">Frozen 2 (2019)</label>
+                    </div>
+                    <div class="movie-item" data-id="58">
+                        <input type="checkbox" id="movie-58">
+                        <label for="movie-58">Raya e o Último Dragão (2021)</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-era" data-era="recent">
+                <h3>⭐ ERA MAIS RECENTE (2022–2024)</h3>
+                <div class="era-movies">
+                    <div class="movie-item" data-id="59">
+                        <input type="checkbox" id="movie-59">
+                        <label for="movie-59">Mundo Estranho (2022)</label>
+                    </div>
+                    <div class="movie-item" data-id="60">
+                        <input type="checkbox" id="movie-60">
+                        <label for="movie-60">Wish – O Poder dos Desejos (2023)</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nossa Aventura Disney. Feito com muito carinho para vocês! 💖</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
